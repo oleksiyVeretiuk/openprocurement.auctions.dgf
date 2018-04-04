@@ -4,10 +4,13 @@ from openprocurement.api.utils import (
     context_unpack,
     APIResource,
 )
+from openprocurement.api.validation import (
+    validate_patch_document_data,
+)
+
 from openprocurement.auctions.core.validation import (
     validate_file_update,
     validate_file_upload,
-    validate_patch_document_data,
 )
 from openprocurement.auctions.core.utils import (
     save_auction,
@@ -15,7 +18,7 @@ from openprocurement.auctions.core.utils import (
     opresource,
 )
 from openprocurement.auctions.dgf.utils import upload_file, get_file, invalidate_bids_data, generate_rectificationPeriod
-from openprocurement.api.models import get_now, TZ
+from openprocurement.api.utils import get_now
 
 
 @opresource(name='dgfOtherAssets:Auction Documents',
