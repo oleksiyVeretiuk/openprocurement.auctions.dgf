@@ -33,17 +33,3 @@ DGF_ADDRESS_REQUIRED_FROM = datetime(2020, 2, 8, tzinfo=TZ)
 ORA_CODES[0:0] = ["UA-IPN", "UA-FIN"]
 
 NUMBER_OF_BIDS_TO_BE_QUALIFIED = 2
-
-#Views location
-
-FINANCIAL_VIEW_LOCATIONS = [
-    "openprocurement.auctions.dgf.views.financial",
-    "openprocurement.auctions.core.plugins.awarding.v2_1.views",
-    "openprocurement.auctions.core.plugins.contracting.v2_1.views"
-]
-
-OTHER_VIEW_LOCATIONS = [
-    "openprocurement.auctions.dgf.views.other",
-    "openprocurement.auctions.core.plugins.awarding.v2_1.views",
-    "openprocurement.auctions.core.plugins.contracting.v2_1.views"
-]
